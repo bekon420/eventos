@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sintaxis de SQL</title>
+	<style>
+		html, body {
+			font-family: "Poppins", sans-serif;
+			margin: 0;
+			background-color: #001B2E;
+			color: #fff;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		:root {
+			--color-primary: #001B2E;
+			--color-secondary: #D3D0CB;
+			--bg-dark: #415D43;
+			--bg-light: #343950;
+		}
+
+		
+		nav {
+			width: 100%;
+			background-color: var(--bg-dark);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 30px;
+		}
+
+		.menu {
+			list-style: none;
+			display: flex;
+		}
+
+		.menu li {
+			margin: 0 20px;
+		}
+
+		.menu a {
+			text-decoration: none;
+			color: var(--color-secondary);
+			transition: color 0.3s ease;
+		}
+
+		.menu a:hover {
+			color: #fff;
+		}
+
+		
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 50px 0;
+		}
+
+		.container h1 {
+			font-size: 50px;
+			margin-bottom: 20px;
+			color: var(--color-secondary);
+		}
+
+		.content {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			background-color: var(--bg-dark);
+			padding: 30px;
+			border-radius: 8px;
+			width: 80%;
+			max-width: 800px;
+		}
+
+		.content h2 {
+			font-size: 30px;
+			margin-bottom: 10px;
+			color: #fff;
+		}
+
+		.content p, .content pre {
+			font-size: 18px;
+			margin-bottom: 15px;
+			color: var(--color-secondary);
+		}
+
+		
+		pre {
+			background-color: #343950;
+			padding: 15px;
+			border-radius: 5px;
+			overflow-x: auto;
+			color: #00FF7F;
+		}
+
+		
+		footer {
+			background-color: var(--bg-light);
+			padding: 10px;
+			width: 100%;
+			text-align: center;
+			color: var(--color-secondary);
+		}
+
+	</style>
+</head>
+<body>
+
+	
+	<div class="header" id="myHeader">
+		<nav>
+			<img src="./Images/3.png" alt="Logo" width="50">
+			<ul class="menu">
+				<li><a href="Proyecto_Eventos.html" class="nav-link">Home</a></li>
+				<li><a href="Videos.html">Videos</a></li>
+				<li><a href="Conceptos.html">Conceptos</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	
+	<div class="container">
+		<h1>Sintaxis Básica de SQL</h1>
+		<div class="content">
+			<h2>SELECT</h2>
+			<p>La instrucción <code>SELECT</code> se utiliza para extraer datos de una base de datos.</p>
+			<pre>
+SELECT columna1, columna2
+FROM tabla
+WHERE condicion;
+			</pre>
+
+			<h2>INSERT</h2>
+			<p>La instrucción <code>INSERT INTO</code> se utiliza para insertar nuevos registros en una tabla.</p>
+			<pre>
+INSERT INTO tabla (columna1, columna2)
+VALUES (valor1, valor2);
+			</pre>
+
+			<h2>UPDATE</h2>
+			<p>La instrucción <code>UPDATE</code> se usa para modificar registros existentes en una tabla.</p>
+			<pre>
+UPDATE tabla
+SET columna1 = valor1, columna2 = valor2
+WHERE condicion;
+			</pre>
+
+			<h2>DELETE</h2>
+			<p>La instrucción <code>DELETE</code> se usa para eliminar registros de una tabla.</p>
+			<pre>
+DELETE FROM tabla
+WHERE condicion;
+			</pre>
+
+			
+		</div>
+	</div>
+
+
+	<footer>
+		<p>CBTIS 020 - Curso de SQL</p>
+	</footer>
+
+	<script>
+
+		window.onscroll = function() {myFunction()};
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			} else {
+				header.classList.remove("sticky");
+			}
+		}
+	</script>
+
+</body>
+</html>

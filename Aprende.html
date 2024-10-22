@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aprende Ahora - SQL y Bases de Datos</title>
+	<style>
+		html, body {
+			font-family: "Poppins", sans-serif;
+			margin: 0;
+			background-color: #001B2E;
+			color: #fff;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		:root {
+			--color-primary: #001B2E;
+			--color-secondary: #D3D0CB;
+			--bg-dark: #415D43;
+			--bg-light: #343950;
+		}
+
+	
+		nav {
+			width: 100%;
+			background-color: var(--bg-dark);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 30px;
+		}
+
+		.menu {
+			list-style: none;
+			display: flex;
+		}
+
+		.menu li {
+			margin: 0 20px;
+		}
+
+		.menu a {
+			text-decoration: none;
+			color: var(--color-secondary);
+			transition: color 0.3s ease;
+		}
+
+		.menu a:hover {
+			color: #fff;
+		}
+
+		
+		.container {
+			width: 90%;
+			margin: 50px auto;
+			text-align: center;
+		}
+
+		.container h1 {
+			font-size: 48px;
+			color: var(--color-secondary);
+			margin-bottom: 40px;
+		}
+
+		.section {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 50px;
+		}
+
+		.section-item {
+			width: 30%;
+			background-color: var(--bg-light);
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s ease;
+		}
+
+		.section-item:hover {
+			transform: scale(1.05);
+		}
+
+		.section-item h2 {
+			font-size: 28px;
+			margin-bottom: 15px;
+			color: #fff;
+		}
+
+		.section-item p {
+			font-size: 16px;
+			color: var(--color-secondary);
+			margin-bottom: 20px;
+		}
+
+		.section-item a {
+			text-decoration: none;
+			color: var(--color-secondary);
+			font-weight: bold;
+			padding: 10px 20px;
+			border: 2px solid var(--color-secondary);
+			border-radius: 50px;
+			transition: background-color 0.3s ease, color 0.3s ease;
+		}
+
+		.section-item a:hover {
+			background-color: var(--color-secondary);
+			color: #001B2E;
+		}
+
+		
+		footer {
+			background-color: var(--bg-light);
+			padding: 10px;
+			width: 100%;
+			text-align: center;
+			color: var(--color-secondary);
+		}
+
+	</style>
+</head>
+<body>
+
+
+	<div class="header" id="myHeader">
+		<nav>
+			<img src="./Images/3.png" alt="Logo" width="50">
+			<ul class="menu">
+				<li><a href="sintaxis.html" class="nav-link">Sintaxis</a></li>
+				<li><a href="videos.html" class="nav-link">Videos</a></li>
+				<li><a href="conceptos.html" class="nav-link">Conceptos</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	
+	<div class="container">
+		<h1>Aprende Ahora sobre SQL y Bases de Datos</h1>
+
+		<div class="section">
+			
+			<div class="section-item">
+				<h2>Sintaxis de SQL</h2>
+				<p>Explora las reglas y estructuras fundamentales del lenguaje SQL.</p>
+				<a href="sintaxis.html">Explorar Sintaxis</a>
+			</div>
+
+			
+			<div class="section-item">
+				<h2>Videos Educativos</h2>
+				<p>Aprende visualmente a través de nuestros videos.</p>
+				<a href="videos.html">Ver Videos</a>
+			</div>
+
+			
+			<div class="section-item">
+				<h2>Conceptos Clave</h2>
+				<p>Comprende los términos más importantes y los conceptos base para comenzar a trabajar con bases de datos.</p>
+				<a href="conceptos.html">Revisar Conceptos</a>
+			</div>
+		</div>
+	
+	</div>
+
+	<footer>
+		<p>CBTIS 020 - Curso de SQL</p>
+	</footer>
+
+</body>
+</html>

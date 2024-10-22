@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Videos - SQL y Bases de Datos</title>
+	<style>
+		html, body {
+			font-family: "Poppins", sans-serif;
+			margin: 0;
+			background-color: #001B2E;
+			color: #fff;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		:root {
+			--color-primary: #001B2E;
+			--color-secondary: #D3D0CB;
+			--bg-dark: #415D43;
+			--bg-light: #343950;
+		}
+
+		
+		nav {
+			width: 100%;
+			background-color: var(--bg-dark);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 30px;
+		}
+
+		.menu {
+			list-style: none;
+			display: flex;
+		}
+
+		.menu li {
+			margin: 0 20px;
+		}
+
+		.menu a {
+			text-decoration: none;
+			color: var(--color-secondary);
+			transition: color 0.3s ease;
+		}
+
+		.menu a:hover {
+			color: #fff;
+		}
+
+		
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 50px 0;
+			width: 100%;
+		}
+
+		.container h1 {
+			font-size: 50px;
+			margin-bottom: 20px;
+			color: var(--color-secondary);
+		}
+
+		.video-list {
+			width: 90%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		.video-item {
+			width: 30%;
+			background-color: var(--bg-light);
+			margin-bottom: 30px;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			transition: transform 0.3s ease-in-out;
+		}
+
+		.video-item:hover {
+			transform: scale(1.05);
+		}
+
+		video {
+			width: 100%;
+			height: auto;
+			border-radius: 8px;
+			margin-bottom: 10px;
+			cursor: pointer;
+		}
+
+		.video-title {
+			font-size: 22px;
+			font-weight: bold;
+			margin-bottom: 10px;
+			text-align: center;
+			color: #fff;
+		}
+
+		.video-description {
+			font-size: 16px;
+			color: var(--color-secondary);
+			text-align: center;
+		}
+
+		.video-vertical {
+			max-width: 250px; 
+			width: 50%; 
+			height: auto; 
+			margin: 0 auto; 
+			border-radius: 8px;
+			margin-bottom: 10px;
+		}
+
+				footer {
+			background-color: var(--bg-light);
+			padding: 10px;
+			width: 100%;
+			text-align: center;
+			color: var(--color-secondary);
+		}
+
+	</style>
+</head>
+<body>
+
+	
+	<div class="header" id="myHeader">
+		<nav>
+			<img src="./Images/3.png" alt="Logo" width="50">
+			<ul class="menu">
+				<li><a href="Proyecto_Eventos.html" class="nav-link">Home</a></li>
+				<li><a href="Sintaxis.html" class="nav-link">Sintaxis</a></li>
+				<li><a href="Conceptos.html">Conceptos</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="container">
+		<h1>Videos Educativos - SQL y Bases de Datos</h1>
+		<div class="video-list">
+
+			
+			<div class="video-item">
+
+				<Video class="video-vertical" src="./Images/proyecto.mp4" controls></video>
+				<div class="video-title">Introducción a SQL</div>
+				<div class="video-description">Aprende los conceptos básicos sobre qué es SQL y cómo funciona.</div>
+			</div>
+
+			<div class="video-item">
+				<video src="./Images/video2.mp4" controls></video>
+				<div class="video-title">Consulta SELECT</div>
+				<div class="video-description">Aprende cómo realizar consultas básicas con el comando SELECT.</div>
+			</div>
+
+			
+			<div class="video-item">
+				<video src="./Images/video3.mp4" controls></video>
+				<div class="video-title">Insertar Datos con INSERT</div>
+				<div class="video-description">Cómo insertar nuevos registros en una tabla usando INSERT.</div>
+			</div>
+
+			
+			<div class="video-item">
+				<video src="./Images/video4.mp4" controls></video>
+				<div class="video-title">Actualizar Datos con UPDATE</div>
+				<div class="video-description">Modifica registros existentes en una tabla con el comando UPDATE.</div>
+			</div>
+
+			
+			<div class="video-item">
+				<video src="./Images/video5.mp4" controls></video>
+				<div class="video-title">Eliminar Registros con DELETE</div>
+				<div class="video-description">Aprende cómo eliminar registros usando el comando DELETE.</div>
+			</div>
+
+			
+			<div class="video-item">
+				<video src="./Images/video6.mp4" controls></video>
+				<div class="video-title">Crear base de datos con comandos SQL</div>
+				<div class="video-description">Aprende a crear una base de datos con SQL.</div>
+			</div>
+
+			
+			<div class="video-item">
+				<video src="./Images/video7.mp4" controls></video>
+				<div class="video-title">Crear tablas con comandos SQL</div>
+				<div class="video-description">Aprende a crear una tabla con SQL.</div>
+			</div>
+
+			<div class="video-item">
+				<video src="./Images/video8.mp4" controls></video>
+				<div class="video-title">Eliminar base de datos con comandos SQL</div>
+				<div class="video-description">Aprende a eliminar una base de datos con SQL.</div>
+			</div>
+
+			<div class="video-item">
+				<video src="./Images/video9.mp4" controls></video>
+				<div class="video-title">Eliminar tablas con comandos SQL</div>
+				<div class="video-description">Aprende a eliminar una tabla con SQL.</div>
+			</div>
+
+		</div>
+	</div>
+
+	
+	<footer>
+		<p>CBTIS 020 - Curso de SQL</p>
+	</footer>
+
+</body>
+</html>

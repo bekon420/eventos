@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conceptos de Base de Datos y SQL</title>
+	<style>
+
+		html, body {
+			font-family: "Poppins", sans-serif;
+			margin: 0;
+			background-color: #001B2E;
+			color: #fff;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		:root {
+			--color-primary: #001B2E;
+			--color-secondary: #D3D0CB;
+			--bg-dark: #415D43;
+			--bg-light: #343950;
+		}
+
+	
+		nav {
+			width: 100%;
+			background-color: var(--bg-dark);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 30px;
+		}
+
+		.menu {
+			list-style: none;
+			display: flex;
+		}
+
+		.menu li {
+			margin: 0 20px;
+		}
+
+		.menu a {
+			text-decoration: none;
+			color: var(--color-secondary);
+			transition: color 0.3s ease;
+		}
+
+		.menu a:hover {
+			color: #fff;
+		}
+
+		/* Page content */
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 50px 0;
+		}
+
+		.container h1 {
+			font-size: 50px;
+			margin-bottom: 20px;
+			color: var(--color-secondary);
+		}
+
+		.content {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			background-color: var(--bg-dark);
+			padding: 30px;
+			border-radius: 8px;
+			width: 80%;
+			max-width: 800px;
+		}
+
+		.content h2 {
+			font-size: 30px;
+			margin-bottom: 10px;
+			color: #fff;
+		}
+
+		.content p {
+			font-size: 18px;
+			margin-bottom: 15px;
+			color: var(--color-secondary);
+		}
+
+		
+		footer {
+			background-color: var(--bg-light);
+			padding: 10px;
+			width: 100%;
+			text-align: center;
+			color: var(--color-secondary);
+		}
+
+	</style>
+</head>
+<body>
+
+	
+	<div class="header" id="myHeader">
+		<nav>
+			<img src="./Images/3.png" alt="Logo" width="50">
+			<ul class="menu">
+				<li><a href="Proyecto_Eventos.html">Home</a></li>
+				<li><a href="Videos.html">Videos</a></li>
+				<li><a href="Sintaxis.html" class="nav-link">Sintaxis</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	
+	<div class="container">
+		<h1>Conceptos Clave de Bases de Datos y SQL</h1>
+		<div class="content">
+			<h2>¿Qué es una Base de Datos?</h2>
+			<p>Una base de datos es un conjunto de datos organizados de manera que se puedan acceder, gestionar y actualizar fácilmente. Las bases de datos son fundamentales en el almacenamiento de información estructurada.</p>
+
+			<h2>¿Qué es SQL?</h2>
+			<p>SQL (Structured Query Language) es un lenguaje utilizado para gestionar y manipular bases de datos relacionales. Es el estándar para la gestión de datos en la mayoría de sistemas de bases de datos.</p>
+
+			<h2>Claves Primarias (Primary Keys)</h2>
+			<p>Una clave primaria es un campo en una tabla de base de datos que identifica de manera única cada registro en esa tabla. Es importante para garantizar que cada fila sea única.</p>
+
+			<h2>Claves Foráneas (Foreign Keys)</h2>
+			<p>Una clave foránea es un campo en una tabla que se utiliza para crear una relación entre dos tablas. Apunta a una clave primaria en otra tabla.</p>
+
+			<h2>Consultas SELECT en SQL</h2>
+			<p>La instrucción <code>SELECT</code> es utilizada para extraer datos de una base de datos. Es una de las consultas más comunes en SQL.</p>
+
+		</div>
+	</div>
+
+	
+	<footer>
+		<p>CBTIS 020 - Curso de SQL</p>
+	</footer>
+
+	<script>
+		
+		window.onscroll = function() {myFunction()};
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			} else {
+				header.classList.remove("sticky");
+			}
+		}
+	</script>
+
+</body>
+</html>
